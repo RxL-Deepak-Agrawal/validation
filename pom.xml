@@ -255,6 +255,10 @@ Use is subject to <a href="{@docRoot}/doc-files/speclicense.html" target="_top">
                         <include>**/*.xml</include>
                         <include>**/*.xsd</include>
                     </includes>
+                    <!-- RxLogix: .mvn/rx-nexus-settings.xml is build configuration, not project source -->
+                    <excludes>
+                        <exclude>.mvn/**</exclude>
+                    </excludes>
                 </configuration>
                 <executions>
                     <execution>
